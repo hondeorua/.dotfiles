@@ -21,9 +21,9 @@ return {
         theme = custom_horizon,
         globalstatus = true,
       },
-      sections = {
-        lualine_c = { '' },
-      },
+      -- sections = {
+      --   lualine_c = { '' },
+      -- },
     }
   end,
 }
