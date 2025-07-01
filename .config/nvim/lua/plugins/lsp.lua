@@ -33,7 +33,25 @@ return {
           },
         },
       },
-      'williamboman/mason-lspconfig.nvim',
+      {
+        'williamboman/mason-lspconfig.nvim',
+        opts = {
+          ensure_installed = {
+            'pyright',
+            'html',
+            'ts_ls',
+            'cssls',
+            'jsonls',
+            'eslint',
+            'tailwindcss',
+            'lua_ls',
+            'jdtls',
+            'clangd',
+            'omnisharp',
+          },
+          automatic_installation = true,
+        },
+      },
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
       -- Useful status updates for LSP.
@@ -236,6 +254,11 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'prettier',
+        'isort',
+        'black',
+        'pylint',
+        'eslint_d',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
