@@ -23,3 +23,4 @@ source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias cd='z'
+alias matrix='cmatrix'

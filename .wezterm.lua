@@ -18,8 +18,9 @@ config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
 config.enable_tab_bar = false
 
 config.window_decorations = "RESIZE"
-
-config.colors = {}
+config.colors = {
+	cursor_bg = "fa5482",
+}
 
 config.window_background_opacity = 0.4
 config.macos_window_background_blur = 50
