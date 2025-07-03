@@ -38,6 +38,7 @@ return {
         opts = {
           ensure_installed = {
             'pyright',
+            'taplo',
             'html',
             'ts_ls',
             'cssls',
