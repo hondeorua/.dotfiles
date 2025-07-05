@@ -14,25 +14,11 @@ xcode-select --install
 git clone git@github.com:hondeorua/.dotfiles.git
 ```
 
-3. Install Homebrew, followed by the software listed in the Brewfile.
+3. Run script to set up everything (well not system preferences yet)
 
 ```zsh
-# These could also be in an install script.
-
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# Then pass in the Brewfile location...
-brew bundle --file ~/.dotfiles/Brewfile
-
-# ...or move to the directory first.
-cd ~/.dotfiles && brew bundle
-```
-
-4. Create symlinks in the Home directory to the real files in the repo.
-
-```zsh
-stow .
+cd ~/.dotfiles/
+./setup.sh
 ```
 
 
