@@ -53,7 +53,11 @@ return {
           automatic_installation = true,
         },
       },
-      'WhoIsSethDaniel/mason-tool-installer.nvim',
+      { 'WhoIsSethDaniel/mason-tool-installer.nvim', opts = {
+        ensure_installed = {
+          'markdownlint',
+        },
+      } },
 
       -- Useful status updates for LSP.
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
