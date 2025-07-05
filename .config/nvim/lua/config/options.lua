@@ -66,9 +66,9 @@ vim.cmd 'set shiftwidth=3'
 -- vim.o.showtabline = 2
 -- show path if tabline is enabled
 vim.opt.sessionoptions = 'curdir,folds,globals,help,tabpages,terminal,winsize'
-vim.diagnostic.config {
-  virtual_text = true, -- shows error in-line at end of line
-  signs = true,
-  underline = true,
-  update_in_insert = true,
-}
+-- vim.diagnostic.config {
+--   virtual_text = true, -- shows error in-line at end of line
+--   signs = true,
+--   underline = true,
+--   update_in_insert = true,
+-- }
