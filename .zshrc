@@ -28,4 +28,4 @@ alias matrix='cmatrix'
 alias vim='nvim'
 
 # keybind for tmux-sessionizer script
-bindkey -s '^[f' "tmux-sessionizer\n"
+bindkey -s '^[t' "tmux-sessionizer\n"
