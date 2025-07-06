@@ -29,7 +29,9 @@ return { -- You can easily change to a different colorscheme.
     vim.api.nvim_set_hl(0, 'WinBar', { bg = 'none', fg = 'none', bold = true }),
     vim.api.nvim_set_hl(0, 'winseparator', { bg = 'none' }),
 
-    vim.api.nvim_set_hl(0, 'MasonTitle', { bg = '#ffffff', fg = '#ffffff' }),
+    -- vim.api.nvim_set_hl(0, 'MasonTitle', { bg = '#ffffff', fg = '#ffffff' }),
     vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#fa5482', fg = '#ffffff' }),
+
+    vim.api.nvim_set_hl(0, 'LazyButton', { bg = '#888888', fg = '#b8a9a9' }),
   },
 }
