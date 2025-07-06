@@ -1,9 +1,15 @@
 #!/bin/bash
 
 # Install homebrew and tools (optional)
- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "Installing Homebrew..."
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo "Installing apps..."
 cd ~/.dotfiles && brew bundle
 
 # Symlink dotfiles (optional)
- stow .
+echo "Stowing..."
+stow .
 
+echo "You're all set..."
+echo "Well...except for system settings :>>>>"
