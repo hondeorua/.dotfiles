@@ -36,3 +36,5 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- vim.api.nvim_create_autocmd({ 'WinEnter', 'BufWinEnter', 'WinLeave' }, {
 --   callback = update_winbar,
 -- })
+--
+-- There's more autocmds spread in plugins folder
