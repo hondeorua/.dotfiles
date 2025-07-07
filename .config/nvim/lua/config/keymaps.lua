@@ -51,9 +51,30 @@ end)
 -- keymap to chmod a script
 vim.keymap.set('n', '<leader>cx', ':!chmod +x %<CR>', { noremap = true })
 
--- PgUp and PgDn auto center cursor
+-- PgUp and PgDn and G auto center cursor
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { noremap = true })
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { noremap = true })
+vim.keymap.set('n', 'G', 'Gzz', { noremap = true })
 
 -- Auto center cursor after scrolling half page
 vim.keymap.set('x', '<leader>p', '"_dP', { noremap = true })
+
+-- VSCode-like move selected lines up and down
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+-- Cursor stays at the same place while J-ing
+vim.keymap.set('n', 'J', "mzJ'z")
+
+-- Center cursor while jumping between searches
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+
+-- yank to system clipboard
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
+
+-- delete but to system clipboard
+vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
+
+-- tmux-sessioner from inside nvim
+vim.keymap.set('n', '<M-t>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
