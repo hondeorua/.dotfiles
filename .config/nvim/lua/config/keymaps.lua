@@ -70,8 +70,11 @@ vim.keymap.set('n', 'J', "mzJ'z")
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
+-- yank entire buffer
+vim.keymap.set('n', '<leader>gy', 'ggVGy', { desc = 'Yank buffer' })
+
 -- yank to system clipboard
-vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]], { desc = 'Yank to clipboard' })
 
 -- delete but to system clipboard
 vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
