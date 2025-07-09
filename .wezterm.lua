@@ -12,7 +12,7 @@ config.initial_cols = 95
 config.initial_rows = 28
 
 -- or, changing the font size and color scheme.
-config.font_size = 16
+config.font_size = 19.5
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
 
 config.enable_tab_bar = false
