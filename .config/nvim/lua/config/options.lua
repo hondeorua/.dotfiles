@@ -72,3 +72,6 @@ vim.opt.sessionoptions = 'curdir,folds,globals,help,tabpages,terminal,winsize'
 --   underline = true,
 --   update_in_insert = true,
 -- }
+
+-- enable line break on end of word and not end of line
+vim.opt.lbr = true
