@@ -15,15 +15,12 @@ return { -- Autocompletion
         return 'make install_jsregexp'
       end)(),
       dependencies = {
-        -- `friendly-snippets` contains a variety of premade snippets.
-        --    See the README about individual language/framework/plugin snippets:
-        --    https://github.com/rafamadriz/friendly-snippets
-        -- {
-        --   'rafamadriz/friendly-snippets',
-        --   config = function()
-        --     require('luasnip.loaders.from_vscode').lazy_load()
-        --   end,
-        -- },
+        {
+          'rafamadriz/friendly-snippets',
+          config = function()
+            require('luasnip.loaders.from_vscode').lazy_load()
+          end,
+        },
       },
     },
     'saadparwaiz1/cmp_luasnip',
@@ -34,7 +31,6 @@ return { -- Autocompletion
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-buffer',
-    'rafamadriz/friendly-snippets',
   },
   config = function()
     -- See `:help cmp`
@@ -109,6 +105,7 @@ return { -- Autocompletion
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
       },
       sources = {
+        { name = 'html-css' },
         {
           name = 'lazydev',
           -- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
@@ -116,7 +113,7 @@ return { -- Autocompletion
         },
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
-        { name = 'luasnip' },
+        { name = 'buffer' },
         { name = 'path' },
       },
     }
