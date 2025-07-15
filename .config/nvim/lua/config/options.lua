@@ -75,3 +75,8 @@ vim.opt.sessionoptions = 'curdir,folds,globals,help,tabpages,terminal,winsize'
 
 -- enable line break on end of word and not end of line
 vim.opt.lbr = true
+
+-- set wrap line at 80 characters, for existing files, press "gggqG" to see if
+-- it helps
+vim.opt.wrap = true
+vim.opt.textwidth = 80
