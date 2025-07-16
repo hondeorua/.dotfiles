@@ -27,5 +27,5 @@ cd ~/.dotfiles/
 ## TODO List
 
 - Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
-- Add debugger to nvim
+- Change keymap for harpoon for instant access even in insert mode
 )!
