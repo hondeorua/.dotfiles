@@ -29,3 +29,4 @@ alias vim='nvim'
 
 # keybind for tmux-sessionizer script
 bindkey -s '^[t' "tmux-sessionizer\n"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

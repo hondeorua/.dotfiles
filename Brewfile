@@ -1,6 +1,8 @@
 tap "nikitabobko/tap"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# XML-based font configuration API for X Windows
+brew "fontconfig"
 # Cross-platform make
 brew "cmake"
 # Console Matrix
@@ -9,8 +11,6 @@ brew "cmatrix"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# XML-based font configuration API for X Windows
-brew "fontconfig"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU compiler collection
@@ -27,6 +27,8 @@ brew "neofetch"
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
+# Development kit for the Java programming language
+brew "openjdk"
 # Theme for zsh
 brew "powerlevel10k"
 # Search tool like grep and The Silver Searcher
@@ -41,8 +43,6 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Colemak mod for more comfortable typing (DH variant)
