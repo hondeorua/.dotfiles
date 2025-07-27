@@ -3,6 +3,8 @@ tap "nikitabobko/tap"
 brew "bat"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
+# Vector graphics library with cross-device output support
+brew "cairo"
 # Cross-platform make
 brew "cmake"
 # Console Matrix
@@ -29,6 +31,8 @@ brew "neovim"
 brew "node"
 # Development kit for the Java programming language
 brew "openjdk"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Theme for zsh
 brew "powerlevel10k"
 # Search tool like grep and The Silver Searcher
@@ -37,6 +41,8 @@ brew "ripgrep"
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
