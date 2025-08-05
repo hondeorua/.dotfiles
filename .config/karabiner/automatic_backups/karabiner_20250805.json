@@ -157,10 +157,6 @@
                             "to": [{ "key_code": "p" }]
                         },
                         {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "caps_lock" }]
-                        },
-                        {
                             "from": { "key_code": "s" },
                             "to": [{ "key_code": "r" }]
                         },
@@ -189,12 +185,8 @@
                             "to": [{ "key_code": "x" }]
                         },
                         {
-                            "from": { "key_code": "left_control" },
-                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
-                        },
-                        {
-                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
-                            "to": [{ "key_code": "left_control" }]
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "caps_lock" }]
                         }
                     ]
                 }
