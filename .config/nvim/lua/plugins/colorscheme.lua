@@ -33,5 +33,7 @@ return { -- You can easily change to a different colorscheme.
     vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#fa5482', fg = '#ffffff' }),
 
     vim.api.nvim_set_hl(0, 'LazyButton', { bg = 'none', fg = '#b8a9a9' }),
+
+    -- vim.api.nvim_set_hl(0, 'LspReferenceText', { bg = '#fa5482', fg = '#ffffff' }),
   },
 }
