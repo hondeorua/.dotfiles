@@ -81,10 +81,6 @@
                     "identifiers": { "is_keyboard": true },
                     "simple_modifications": [
                         {
-                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
-                            "to": [{ "key_code": "left_control" }]
-                        },
-                        {
                             "from": { "key_code": "b" },
                             "to": [{ "key_code": "z" }]
                         },
@@ -131,10 +127,6 @@
                         {
                             "from": { "key_code": "left_command" },
                             "to": [{ "key_code": "right_shift" }]
-                        },
-                        {
-                            "from": { "key_code": "left_control" },
-                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
                         },
                         {
                             "from": { "key_code": "left_option" },
@@ -197,7 +189,11 @@
                             "to": [{ "key_code": "x" }]
                         },
                         {
-                            "from": { "key_code": "right_command" },
+                            "from": { "key_code": "left_control" },
+                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
+                        },
+                        {
+                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
                             "to": [{ "key_code": "left_control" }]
                         }
                     ]
