@@ -31,16 +31,16 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
--- tabline keymaps (no longer using)
--- vim.api.nvim_set_keymap('n', '<leader>ta', ':$tabnew<CR>', { noremap = true })
--- vim.api.nvim_set_keymap('n', '<leader>tc', ':tabclose<CR>', { noremap = true })
--- vim.api.nvim_set_keymap('n', '<leader>to', ':tabonly<CR>', { noremap = true })
--- vim.api.nvim_set_keymap('n', '<leader>tn', ':tabn<CR>', { noremap = true })
--- vim.api.nvim_set_keymap('n', '<leader>tp', ':tabp<CR>', { noremap = true })
+-- keymaps for tabs
+-- vim.keymap.set('n', '<leader>ta', ':$tabnew<CR>', { noremap = true })
+-- vim.keymap.set('n', '<leader>tc', ':tabclose<CR>', { noremap = true })
+-- vim.keymap.set('n', '<leader>to', ':tabonly<CR>', { noremap = true })
+vim.keymap.set('n', '<leader>tn', ':tabn<CR>', { noremap = true })
+vim.keymap.set('n', '<leader>tp', ':tabp<CR>', { noremap = true })
 -- -- move current tab to previous position
--- vim.api.nvim_set_keymap('n', '<leader>tmp', ':-tabmove<CR>', { noremap = true })
+-- vim.keymap.set('n', '<leader>tmp', ':-tabmove<CR>', { noremap = true })
 -- -- move current tab to next position
--- vim.api.nvim_set_keymap('n', '<leader>tmn', ':+tabmove<CR>', { noremap = true })
+-- vim.keymap.set('n', '<leader>tmn', ':+tabmove<CR>', { noremap = true })
 
 vim.keymap.set('n', 'K', function()
   vim.lsp.buf.hover {
