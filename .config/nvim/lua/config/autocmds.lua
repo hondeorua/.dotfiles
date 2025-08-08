@@ -12,12 +12,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-vim.api.nvim_create_autocmd('TextChanged', {
-  pattern = '*',
-  callback = function()
-    vim.cmd 'retab'
-  end,
-})
+-- Auto retab whenever textchanged
+-- vim.api.nvim_create_autocmd('TextChanged', {
+--   pattern = '*',
+--   callback = function()
+--     vim.cmd 'retab'
+--   end,
+-- })
+--
 -- Function to update winbar depending on whether the window is active
 -- local function update_winbar()
 --   local current_win = vim.api.nvim_get_current_win()

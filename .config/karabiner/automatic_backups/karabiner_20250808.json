@@ -165,16 +165,8 @@
                             "to": [{ "key_code": "p" }]
                         },
                         {
-                            "from": { "key_code": "right_command" },
-                            "to": [{ "key_code": "left_control" }]
-                        },
-                        {
                             "from": { "key_code": "right_option" },
                             "to": [{ "key_code": "caps_lock" }]
-                        },
-                        {
-                            "from": { "key_code": "right_shift" },
-                            "to": [{ "key_code": "right_control" }]
                         },
                         {
                             "from": { "key_code": "s" },
@@ -203,6 +195,14 @@
                         {
                             "from": { "key_code": "z" },
                             "to": [{ "key_code": "x" }]
+                        },
+                        {
+                            "from": { "key_code": "right_command" },
+                            "to": [{ "key_code": "left_control" }]
+                        },
+                        {
+                            "from": { "key_code": "right_shift" },
+                            "to": [{ "key_code": "right_control" }]
                         }
                     ]
                 }
