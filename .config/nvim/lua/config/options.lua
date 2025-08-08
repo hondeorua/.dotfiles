@@ -58,10 +58,10 @@ vim.opt.cursorline = false
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 15
 
-vim.cmd 'set expandtab'
-vim.cmd 'set tabstop=3'
-vim.cmd 'set softtabstop=3'
-vim.cmd 'set shiftwidth=3'
+vim.opt.expandtab = true
+vim.opt.tabstop = 3
+vim.opt.softtabstop = 3
+vim.opt.shiftwidth = 3
 
 -- vim.o.showtabline = 2
 -- show path if tabline is enabled
