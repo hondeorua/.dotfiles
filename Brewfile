@@ -29,8 +29,6 @@ brew "neofetch"
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
-# Development kit for the Java programming language
-brew "openjdk"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Theme for zsh
