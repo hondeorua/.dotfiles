@@ -46,7 +46,7 @@ vim.keymap.set('n', 'K', function()
   vim.lsp.buf.hover {
     border = 'rounded',
   }
-end)
+end, { desc = 'Hover' })
 
 -- keymap to chmod a script
 vim.keymap.set('n', '<leader>cx', ':!chmod +x %<CR>', { noremap = true })

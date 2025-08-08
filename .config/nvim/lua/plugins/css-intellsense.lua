@@ -6,12 +6,12 @@ return {
     enable_on = { 'html' },
     handlers = {
       definition = {
-        bind = 'gd',
+        bind = 'g.',
       },
       hover = {
         bind = 'K',
         wrap = true,
-        border = 'none',
+        border = '#ffffff',
         position = 'cursor',
       },
     },
