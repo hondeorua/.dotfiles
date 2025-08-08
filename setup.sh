@@ -10,6 +10,10 @@ cd ~/.dotfiles && brew bundle
 echo "Installing sdkman"
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+echo "Installing java"
+sdk install java
+echo "Installing gradle"
+sdk install gradle
 
 # Symlink dotfiles (optional)
 echo "Stowing..."
