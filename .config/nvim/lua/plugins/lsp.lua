@@ -50,6 +50,11 @@ return {
             'clangd',
             'omnisharp',
           },
+          automatic_enable = {
+            exclude = {
+              'jdtls',
+            },
+          },
           automatic_installation = true,
         },
       },
@@ -237,8 +242,17 @@ return {
               completion = {
                 callSnippet = 'Replace',
               },
+
+              -- does not seem to work, maybe overwritten by something else
+              -- format = {
+              --   enable = true,
+              --   defaultConfig = {
+              --     indent_style = 'space',
+              --     indent_size = '3',
+              --   },
+              -- },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-              -- diagnostics = { disable = { 'missing-fields' } },
+              diagnostics = { disable = { 'missing-fields' } },
             },
           },
         },
@@ -268,18 +282,18 @@ return {
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
-      require('mason-lspconfig').setup {
-        handlers = {
-          function(server_name)
-            local server = servers[server_name] or {}
-            -- This handles overriding only values explicitly passed
-            -- by the server configuration above. Useful when disabling
-            -- certain features of an LSP (for example, turning off formatting for ts_ls)
-            server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-            require('lspconfig')[server_name].setup(server)
-          end,
-        },
-      }
+      -- require('mason-lspconfig').setup {
+      --   -- handlers = {
+      --   --   function(server_name)
+      --   --     local server = servers[server_name] or {}
+      --   --     -- This handles overriding only values explicitly passed
+      --   --     -- by the server configuration above. Useful when disabling
+      --   --     -- certain features of an LSP (for example, turning off formatting for ts_ls)
+      --   --     server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
+      --   --     require('lspconfig')[server_name].setup(server)
+      --   --   end,
+      --   -- },
+      -- }
     end,
   },
 }

@@ -9,6 +9,7 @@ return { -- Highlight, edit, and navigate code
     ensure_installed = {
       'bash',
       'c',
+      'java',
       'diff',
       'python',
       'html',
