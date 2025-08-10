@@ -28,4 +28,10 @@ cd ~/.dotfiles/
 
 - Learn how to use [`defaults`](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) to record and restore System Preferences and other macOS configurations.
 - Change keymap for harpoon for instant access even in insert mode
+- Write own plugin for live-preview
+    - python3 -m http server
+    - auto reload
+    - keymap
+    - auto close serve
+- make the cmdline path more neat. one show project name
 )!
