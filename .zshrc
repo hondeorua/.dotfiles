@@ -10,6 +10,8 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+typeset -g POWERLEVEL9K_DIR_MAX_LENGTH=0
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 alias ls="eza -a --icons --git --group-directories-first"
