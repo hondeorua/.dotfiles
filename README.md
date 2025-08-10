@@ -33,5 +33,4 @@ cd ~/.dotfiles/
     - auto reload
     - keymap
     - auto close serve
-- make the cmdline path more neat. one show project name
 )!
