@@ -46,7 +46,6 @@
                     },
                     {
                         "description": "Map ctrl + [ to escape",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {

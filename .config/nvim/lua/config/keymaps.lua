@@ -84,3 +84,5 @@ vim.keymap.set('n', '<M-t>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
 
 -- live preview
 vim.keymap.set('n', '<leader>v', ':LivePreview start<CR>', { desc = 'Live Preview' })
+
+vim.keymap.set('i', '<C-c>', '<Esc>', { noremap = true })
