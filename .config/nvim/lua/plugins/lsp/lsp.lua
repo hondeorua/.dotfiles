@@ -116,8 +116,13 @@ return {
 
           -- Jump to the definition of the word under your cursor.
           --  This is where a variable was first declared, or where a function is defined, etc.
-          --  To jump back, press <C-t>.
-          map('grd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
+          --  Added the "lh" in case a vim.lsp.buf.hover() is previously
+          --  called and still there so the error where there's overlapping
+          --  window is avoided
+          map('grd', function()
+            vim.api.nvim_feedkeys('lh', 'n', false)
+            require('telescope.builtin').lsp_definitions()
+          end, '[G]oto [D]efinition')
 
           -- Find references for the word under your cursor.
           map('grr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
