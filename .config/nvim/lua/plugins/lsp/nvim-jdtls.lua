@@ -13,11 +13,12 @@ return {
         require('jdtls').start_or_attach(config)
       end,
     })
-    vim.api.nvim_create_autocmd('BufWritePost', {
-      pattern = { 'build.gradle', 'settings.gradle', 'build.gradle.kts' },
-      callback = function()
-        require('jdtls').update_project_config()
-      end,
-    })
+    -- vim.api.nvim_create_autocmd('BufWritePost', {
+    --   pattern = { 'build.gradle', 'settings.gradle', 'build.gradle.kts' },
+    --   callback = function()
+    --
+    --     require('jdtls').update_project_config()
+    --   end,
+    -- })
   end,
 }
