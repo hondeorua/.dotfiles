@@ -26,11 +26,12 @@ source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias cd='z'
-alias matrix='cmatrix'
-alias vim='nvim'
 
 # keybind for tmux-sessionizer script
 bindkey -s '^[t' "tmux-sessionizer\n"
+
+alias gbr='gradle build & gradle run'
+
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 . "$HOME/.local/bin/env"

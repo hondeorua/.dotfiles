@@ -4,3 +4,5 @@ Brewfile
 setup.sh
 .stow-local-ignore
 firewatch.jpg
+.DS_Store
+Raycast 2025-08-02 20.37.35.rayconfig
