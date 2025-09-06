@@ -13,6 +13,8 @@ brew "cmatrix"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU compiler collection
@@ -39,6 +41,8 @@ brew "ripgrep"
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Shell extension to navigate your filesystem faster
