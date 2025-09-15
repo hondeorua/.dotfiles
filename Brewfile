@@ -19,6 +19,8 @@ brew "ffmpeg"
 brew "fzf"
 # GNU compiler collection
 brew "gcc"
+# GNU debugger
+brew "gdb"
 # Distributed revision control system
 brew "git"
 # Improved top (interactive process viewer)
