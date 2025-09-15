@@ -1,6 +1,8 @@
 tap "nikitabobko/tap"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Generate compilation database for clang tooling
+brew "bear"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # Vector graphics library with cross-device output support
