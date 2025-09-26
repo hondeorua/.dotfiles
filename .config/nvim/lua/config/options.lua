@@ -81,4 +81,4 @@ vim.opt.lbr = true
 -- set wrap line at 80 characters, for existing files, press "gggqG" to see if
 -- it helps
 vim.opt.wrap = true
-vim.opt.textwidth = 80
+vim.opt.textwidth = 100
